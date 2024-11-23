@@ -28,9 +28,20 @@ for (let item in myArray) {
 // Using the myArray.push() method, add "mango" to the end of myArray.
 //print myArray using a for... of loop.
 
+const addItem = myArray.push("mango");
+for (const element of myArray) {
+  console.log(element);
+}
+
 //5.--------------------------------------------------------------------------------------
 //Using the myArray.splice() method, remove "cherry" from myArray
 // print the result using myArray.foreach()
+
+// Laget et nytt array for å se det lettere i console.
+
+const newArray = ["apple", "banana", "cherry", "date", "eggplant"];
+const remove = newArray.splice(2, 1);
+newArray.forEach((element) => console.log(element));
 
 //6.--------------------------------------------------------------------------------------
 // Using the .shift() and .pop() method, remove the first and last item from myArray.
